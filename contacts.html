@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="dark overflow-x-hidden" lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" />
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Контакты - АВТО САЛОН</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap&amp;display=swap"
+                rel="stylesheet">
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "on-tertiary": "#303030",
+                                                "surface-tint": "#eec200",
+                                                "tertiary": "#ece9e9",
+                                                "on-secondary-fixed-variant": "#474746",
+                                                "surface-dim": "#131313",
+                                                "tertiary-fixed": "#e4e2e1",
+                                                "on-primary-container": "#6a5500",
+                                                "on-secondary-container": "#b7b5b4",
+                                                "surface-bright": "#3a3939",
+                                                "inverse-on-surface": "#313030",
+                                                "surface-container-low": "#1c1b1b",
+                                                "surface-container-lowest": "#0e0e0e",
+                                                "on-background": "#e5e2e1",
+                                                "on-error-container": "#ffdad6",
+                                                "inverse-primary": "#725c00",
+                                                "secondary": "#c8c6c5",
+                                                "on-tertiary-fixed": "#1b1c1c",
+                                                "tertiary-container": "#cfcdcd",
+                                                "on-secondary": "#313030",
+                                                "on-primary": "#3c2f00",
+                                                "background": "#131313",
+                                                "on-tertiary-fixed-variant": "#474747",
+                                                "on-primary-fixed": "#231b00",
+                                                "secondary-container": "#474746",
+                                                "primary": "#ffe8a9",
+                                                "surface-container-high": "#2a2a2a",
+                                                "surface-container": "#201f1f",
+                                                "on-error": "#690005",
+                                                "primary-fixed-dim": "#eec200",
+                                                "surface-variant": "#353534",
+                                                "error": "#ffb4ab",
+                                                "tertiary-fixed-dim": "#c8c6c6",
+                                                "surface": "#131313",
+                                                "secondary-fixed-dim": "#c8c6c5",
+                                                "on-surface": "#e5e2e1",
+                                                "secondary-fixed": "#e5e2e1",
+                                                "inverse-surface": "#e5e2e1",
+                                                "on-secondary-fixed": "#1c1b1b",
+                                                "on-primary-fixed-variant": "#564500",
+                                                "primary-fixed": "#ffe082",
+                                                "primary-container": "#f6c90e",
+                                                "error-container": "#93000a",
+                                                "surface-container-highest": "#353534",
+                                                "on-tertiary-container": "#575757",
+                                                "outline-variant": "#4d4632",
+                                                "outline": "#9a9078",
+                                                "on-surface-variant": "#d1c6ab",
+                                                "white-overlay": "rgba(255, 255, 255, 0.2)",
+                                                "text-muted": "rgba(255, 255, 255, 0.6)",
+                                                "white-overlay-hover": "rgba(255, 255, 255, 0.35)",
+                                                "nav-glass": "rgba(22, 23, 24, 0.92)",
+                                                "deep-black": "#000000"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "5px",
+                                                "none": "0px",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "md": "16px",
+                                                "3xl": "72px",
+                                                "max-width": "1440px",
+                                                "gutter-desktop": "32px",
+                                                "4xl": "96px",
+                                                "gutter-mobile": "20px",
+                                                "lg": "24px",
+                                                "sm": "12px",
+                                                "xl": "32px",
+                                                "2xl": "48px",
+                                                "xs": "4px",
+                                                "base": "4px"
+                                        },
+                                        "fontFamily": {
+                                                "hero-title": ["Crimson Text", "serif"],
+                                                "section-title": ["Crimson Text", "serif"],
+                                                "section-label": ["HelveticaNeueCyr", "sans-serif"],
+                                                "headline-md": ["HelveticaNeueCyr", "sans-serif"],
+                                                "body-lg": ["HelveticaNeueCyr", "sans-serif"],
+                                                "button-label": ["HelveticaNeueCyr", "sans-serif"],
+                                                "caption": ["HelveticaNeueCyr", "sans-serif"],
+                                                "body-md": ["HelveticaNeueCyr", "sans-serif"]
+                                        },
+                                        "fontSize": {
+                                                "hero-title": ["58px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                                                "section-title": ["48px", { "lineHeight": "56px", "fontWeight": "500" }],
+                                                "section-label": ["12px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "550" }],
+                                                "hero-title-mobile": ["40px", { "lineHeight": "44px", "fontWeight": "500" }],
+                                                "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                                                "body-lg": ["20px", { "lineHeight": "28px", "fontWeight": "400" }],
+                                                "button-label": ["15px", { "lineHeight": "18px", "fontWeight": "550" }],
+                                                "caption": ["12px", { "lineHeight": "14px", "fontWeight": "550" }],
+                                                "body-md": ["15px", { "lineHeight": "18px", "fontWeight": "400" }]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+        /* Performance: skip rendering off-screen sections */
+        .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 600px; }
+
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+                }
+        </style>
+</head>
+
+<body
+        class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-surface-variant selection:text-primary overflow-x-hidden">
+        <!-- TopNavBar -->
+        <header class="fixed top-0 w-full z-50 h-16 backdrop-blur-md bg-nav-glass transition-all duration-300 border-none">
+<div class="flex justify-between items-center px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto h-full w-full">
+    <!-- Left: PARKAVTO Text styled exactly like on politika.html -->
+    <a class="font-hero-title text-body-lg uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-on-surface-variant transition-colors" href="index.html">
+        ПАРКАВТО
+    </a>
+    
+    <!-- Center/Right: Navigation Links (Desktop) -->
+    <div class="hidden md:flex items-center space-x-lg font-button-label text-button-label ml-auto mr-lg">
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="index.html">ГЛАВНАЯ</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="services.html">УСЛУГИ</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="about.html">О НАС</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="contacts.html">КОНТАКТЫ</a>
+
+    </div>
+    
+    <!-- Right: Burger/Zap Button -->
+    <div class="flex items-center gap-md">
+        <div class="hidden md:flex items-center gap-md">
+            <button class="bg-primary-container text-on-surface border border-outline px-lg py-sm rounded hover:bg-white-overlay-hover scale-95 active:scale-90 transition-transform font-button-label text-button-label">
+                ЗАПИСАТЬСЯ
+            </button>
+        </div>
+        <button id="burger-btn" class="md:hidden text-on-surface flex items-center">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</div>
+</header>
+        <!-- Main Content -->
+        <main
+                class="flex-grow pt-[100px] md:pt-[120px] pb-4xl px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto w-full">
+                <header class="mb-xl md:mb-3xl text-left relative">
+                        <div
+                                class="hidden md:block absolute inset-0 w-[400px] h-[400px] bg-white rounded-full blur-[60px] opacity-[0.03] pointer-events-none -top-[100px] -left-[100px]">
+                        </div>
+                        <h1 class="font-hero-title text-hero-title-mobile md:text-hero-title text-on-surface mb-md">Ждем
+                                вас в ПАРКАВТО</h1>
+                        <p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-text-muted max-w-2xl">
+                                Свяжитесь с нами для записи на сервисное обслуживание или консультации с нашими
+                                мастерами.</p>
+                </header>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl lg:gap-2xl flex flex-col lg:grid">
+                        <!-- Contact Info & Desktop Map -->
+                        <div class="lg:col-span-5 flex flex-col gap-lg order-1 lg:order-none">
+                                <div
+                                        class="bg-surface-container-low p-lg md:border-l-2 md:border-primary flex flex-col gap-md rounded md:rounded-none">
+                                        <div class="flex items-start gap-md">
+                                                <span
+                                                        class="material-symbols-outlined text-outline md:text-outline text-primary md:text-outline mt-xs md:mt-0">location_on</span>
+                                                <div>
+                                                        <div
+                                                                class="font-section-label text-section-label text-text-muted uppercase mb-xs">
+                                                                Адрес </div>
+                                                        <div class="font-body-lg text-body-lg text-on-surface">Москва, Новомосковский административный округ, район Внуково, улица Лётчика Ульянина, 5, этаж 1</div>
+                                                </div>
+                                        </div>
+                                        <div class="h-px w-full bg-outline-variant opacity-50"></div>
+                                        <div class="flex items-start gap-md">
+                                                <span
+                                                        class="material-symbols-outlined text-outline md:text-outline text-primary md:text-outline mt-xs md:mt-0">call</span>
+                                                <div>
+                                                        <div
+                                                                class="font-section-label text-section-label text-text-muted uppercase mb-xs">
+                                                                Телефон для связи</div>
+                                                        <div class="font-body-lg text-body-lg text-on-surface">+7 916
+                                                                166-07-07</div>
+                                                </div>
+                                        </div>
+                                        <div class="h-px w-full bg-outline-variant opacity-50"></div>
+                                        <div class="flex items-start gap-md">
+                                                <span
+                                                        class="material-symbols-outlined text-outline md:text-outline text-primary md:text-outline mt-xs md:mt-0">schedule</span>
+                                                <div>
+                                                        <div
+                                                                class="font-section-label text-section-label text-text-muted uppercase mb-xs">
+                                                                Часы работы</div>
+                                                        <div class="font-body-md text-body-md text-on-surface">09:00 -
+                                                                21:00 Ежедневно</div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div
+                                        class="hidden lg:block relative w-full h-[300px] bg-surface-container-lowest border border-outline-variant overflow-hidden group">
+                                        <img loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                                                data-alt="A sophisticated, high-contrast satellite map view of Moscow, Vnukovo area, styled in deep charcoal and crisp whites to match a luxury dark mode interface. The map highlights key arterial roads in subtle light gray against a near-black background, maintaining architectural rigor and a premium gallery aesthetic without vibrant colors."
+                                                data-location="Москва, Новомосковский административный округ, район Внуково, улица Лётчика Ульянина, 5, этаж 1"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLMe02PMoSfdlrLW1syi2UW4Zw2JsHkaXZE6lvwhbisXm6aeyYvivg501dLPV1RofpeGiPXQ5uIVLgq9P6ae4aTPCb0ujoFKCfMUGtG4PCe83fN6EMgIzMzQ4V5RezyayHheqOOLnIPrepcrHYEdbPkZWyAQ3QT-ZoHIpSm4E00n84jz2jSZ4V3uhFLvnn5P9r6vC7lhcUZCrP9gW7-mfZAwDNy_seD8Ar9aeUEGlsjTOafn6LtL0G4uN5tUf1oduieP8FgYM_la0">
+                                        <div
+                                                class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-50">
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Booking Form -->
+                        <div class="lg:col-span-7 order-2 lg:order-none">
+                                <div
+                                        class="bg-surface-container-lowest md:bg-surface-container-lowest p-lg md:p-xl lg:p-2xl border border-outline-variant rounded md:rounded-none relative overflow-hidden">
+                                        <div
+                                                class="hidden md:block absolute top-0 right-0 w-[300px] h-[300px] bg-primary rounded-full blur-[30px] opacity-[0.02] pointer-events-none">
+                                        </div>
+                                        <h2
+                                                class="font-section-title text-headline-md text-on-surface mb-lg hidden md:block">
+                                                Записаться на сервис</h2>
+                                        <h2
+                                                class="font-headline-md text-headline-md text-on-surface mb-lg block md:hidden">
+                                                Свяжитесь с нами</h2>
+                                        <form class="flex flex-col gap-xl md:gap-xl mt-lg md:mt-lg">
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl md:gap-lg">
+                                                        <div class="relative">
+                                                                <label class="font-section-label text-section-label text-text-muted absolute -top-4 md:-top-3 left-0 uppercase"
+                                                                        for="name">ИМЯ</label>
+                                                                <input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface font-body-md py-sm px-0 focus:ring-0 focus:border-on-surface transition-colors placeholder:text-surface-variant"
+                                                                        id="name" name="name"
+                                                                        placeholder="Как к вам обращаться?" type="text">
+                                                        </div>
+                                                        <div class="relative">
+                                                                <label class="font-section-label text-section-label text-text-muted absolute -top-4 md:-top-3 left-0 uppercase"
+                                                                        for="phone">ТЕЛЕФОН</label>
+                                                                <input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface font-body-md py-sm px-0 focus:ring-0 focus:border-on-surface transition-colors placeholder:text-surface-variant"
+                                                                        id="phone" name="phone"
+                                                                        placeholder="+7 (___) ___-__-__" type="tel">
+                                                        </div>
+                                                </div>
+                                                <div class="relative">
+                                                        <label class="font-section-label text-section-label text-text-muted absolute -top-4 md:-top-3 left-0 uppercase"
+                                                                for="car">МАРКА АВТОМОБИЛЯ</label>
+                                                        <input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface font-body-md py-sm px-0 focus:ring-0 focus:border-on-surface transition-colors placeholder:text-surface-variant"
+                                                                id="car" name="car"
+                                                                placeholder="Например: Mercedes-Benz S-Class"
+                                                                type="text">
+                                                </div>
+                                                <div class="relative">
+                                                        <label class="font-section-label text-section-label text-text-muted absolute -top-4 md:-top-3 left-0 uppercase"
+                                                                for="message">СООБЩЕНИЕ / ПРИЧИНА ОБРАЩЕНИЯ</label>
+                                                        <textarea
+                                                                class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface font-body-md py-sm px-0 focus:ring-0 focus:border-on-surface transition-colors resize-none placeholder:text-surface-variant"
+                                                                id="message" name="message"
+                                                                placeholder="Опишите, какие услуги вам требуются..."
+                                                                rows="3"></textarea>
+                                                </div>
+                                                <button class="mt-md w-full md:w-auto self-start bg-on-surface text-background font-button-label text-button-label px-2xl py-md rounded hover:bg-white hover:opacity-90 transition-all duration-300 scale-95 active:scale-90 flex items-center justify-center gap-sm"
+                                                        type="button">
+                                                        <span class="">ОТПРАВИТЬ ЗАЯВКУ</span>
+                                                        <span
+                                                                class="material-symbols-outlined text-[18px] hidden md:inline-block">arrow_forward</span>
+                                                </button>
+                                                <p
+                                                        class="font-caption text-caption text-text-muted mt-sm hidden md:block">
+                                                        Нажимая кнопку, вы соглашаетесь с <a
+                                                                class="underline hover:text-on-surface transition-colors"
+                                                                href="politika.html">политикой конфиденциальности</a>.</p>
+                                        </form>
+                                </div>
+                        </div>
+                        <!-- Mobile Map -->
+                        <div
+                                class="lg:hidden order-3 relative w-full h-64 bg-surface-container-high rounded overflow-hidden">
+                                <img loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80"
+                                        data-alt="A detailed map view of Moscow, Vnukovo area, stylized in a sleek, high-contrast dark mode aesthetic matching a luxury automotive brand. The map features deep charcoal backgrounds, subtle glowing route lines in white, and a striking primary accent pin marking the location. The overall mood is sophisticated, technical, and premium."
+                                        data-location="Moscow"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZV7yYBugIHt0Zj5dpzwb-PD9LUBq5zb9lsNDrytABZSmTdhFg0t5nhk-HPeVjihimYQlaqGBvO_kHAcHpRt7OUXAMS7Elm8pWpl9ZVLnZitT3bYXlPUHafiXI309D1JoeyCiq9bXDxwhoXVMaWK8EGFl0lTYydrfJkWYUwEq5HeFyDAttI9oPNoBQktB2Y21iqoZaKooa_lNK6WQmyCDOwO1PlqqB63_K8z_JDQKg_aB1RFAKiT_WaLx2SiQP1QwCDDOObdC-rJQ">
+                                <div
+                                        class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-60">
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!-- Footer -->
+        <footer
+                class="w-full py-2xl bg-surface-container-lowest border-t border-outline-variant flex flex-col md:flex-row justify-between items-center px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto gap-lg">
+                <a class="font-hero-title text-headline-md uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-on-surface-variant transition-colors" href="index.html">ПАРКАВТО</a>
+                <div
+                        class="flex flex-col md:flex-row gap-md md:gap-lg font-caption text-caption text-text-muted text-center md:text-left">
+                        <a class="hover:text-on-surface transition-colors" href="politika.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                        <a class="hover:text-on-surface transition-colors" href="#">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a>
+                        <a class="hover:text-on-surface transition-colors" href="contacts.html">СОЦИАЛЬНЫЕ СЕТИ</a>
+                </div>
+                <div class="font-caption text-caption text-secondary">© 2026 ПАРКАВТО. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+        </footer>
+
+
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-md pt-20 px-gutter-mobile flex flex-col gap-lg md:hidden">
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="index.html">ГЛАВНАЯ</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="services.html">УСЛУГИ</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="about.html">О НАС</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="contacts.html">КОНТАКТЫ</a>
+    <button class="mt-md bg-primary-container text-on-surface border border-outline px-lg py-md rounded hover:bg-white-overlay-hover scale-95 active:scale-90 transition-transform font-button-label text-button-label">
+        ЗАПИСАТЬСЯ
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    const zapBtns = document.querySelectorAll('button');
+    zapBtns.forEach(btn => {
+        if (btn.textContent.toUpperCase().includes('ЗАПИСАТЬСЯ')) {
+            btn.addEventListener('click', () => {
+                window.location.href = 'contacts.html';
+            });
+        }
+    });
+
+    const form = document.querySelector('form');
+    if (form) {
+        const sendBtn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+        if (sendBtn && sendBtn.textContent.toUpperCase().includes('ОТПРАВИТЬ')) {
+            sendBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name')?.value || '';
+                const phone = document.getElementById('phone')?.value || '';
+                const car = document.getElementById('car')?.value || '';
+                const message = document.getElementById('message')?.value || '';
+                const text = `Новая заявка:
+Имя: ${name}
+Телефон: ${phone}
+Авто: ${car}
+Сообщение: ${message}`;
+                const encodedText = encodeURIComponent(text);
+                window.open(`https://wa.me/79161660707?text=${encodedText}`, '_blank');
+            });
+        }
+    }
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+
+<html class="dark overflow-x-hidden" lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Услуги - АВТО САЛОН</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#303030",
+                        "surface-tint": "#eec200",
+                        "tertiary": "#ece9e9",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-dim": "#131313",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary-container": "#6a5500",
+                        "on-secondary-container": "#b7b5b4",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-background": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#725c00",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "tertiary-container": "#cfcdcd",
+                        "on-secondary": "#313030",
+                        "on-primary": "#3c2f00",
+                        "background": "#131313",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#231b00",
+                        "secondary-container": "#474746",
+                        "primary": "#ffe8a9",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container": "#201f1f",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#eec200",
+                        "surface-variant": "#353534",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#e5e2e1",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#564500",
+                        "primary-fixed": "#ffe082",
+                        "primary-container": "#f6c90e",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-container": "#575757",
+                        "outline-variant": "#4d4632",
+                        "outline": "#9a9078",
+                        "on-surface-variant": "#d1c6ab",
+                        "white-overlay": "rgba(255, 255, 255, 0.2)",
+                        "text-muted": "rgba(255, 255, 255, 0.6)",
+                        "white-overlay-hover": "rgba(255, 255, 255, 0.35)",
+                        "nav-glass": "rgba(22, 23, 24, 0.92)",
+                        "deep-black": "#000000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "3xl": "72px",
+                        "max-width": "1440px",
+                        "gutter-desktop": "32px",
+                        "4xl": "96px",
+                        "gutter-mobile": "20px",
+                        "lg": "24px",
+                        "sm": "12px",
+                        "xl": "32px",
+                        "2xl": "48px",
+                        "xs": "4px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "hero-title": [
+                            "Crimson Text"
+                        ],
+                        "section-title": [
+                            "Crimson Text"
+                        ],
+                        "section-label": [
+                            "HelveticaNeueCyr"
+                        ],
+                        "hero-title-mobile": [
+                            "Crimson Text"
+                        ],
+                        "headline-md": [
+                            "HelveticaNeueCyr"
+                        ],
+                        "body-lg": [
+                            "HelveticaNeueCyr"
+                        ],
+                        "button-label": [
+                            "HelveticaNeueCyr"
+                        ],
+                        "caption": [
+                            "HelveticaNeueCyr"
+                        ],
+                        "body-md": [
+                            "HelveticaNeueCyr"
+                        ]
+                    },
+                    "fontSize": {
+                        "hero-title": [
+                            "58px",
+                            {
+                                "lineHeight": "64px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "section-title": [
+                            "48px",
+                            {
+                                "lineHeight": "56px",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "section-label": [
+                            "12px",
+                            {
+                                "lineHeight": "12px",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "550"
+                            }
+                        ],
+                        "hero-title-mobile": [
+                            "40px",
+                            {
+                                "lineHeight": "44px",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "40px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-lg": [
+                            "20px",
+                            {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "button-label": [
+                            "15px",
+                            {
+                                "lineHeight": "18px",
+                                "fontWeight": "550"
+                            }
+                        ],
+                        "caption": [
+                            "12px",
+                            {
+                                "lineHeight": "14px",
+                                "fontWeight": "550"
+                            }
+                        ],
+                        "body-md": [
+                            "15px",
+                            {
+                                "lineHeight": "18px",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Performance: skip rendering off-screen sections */
+        .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 600px; }
+
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: local('HelveticaNeueCyr-Roman'), local('HelveticaNeueCyr Roman');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: local('HelveticaNeueCyr-Medium'), local('HelveticaNeueCyr Medium');
+            font-weight: 550;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 h-16 backdrop-blur-md bg-nav-glass transition-all duration-300 border-none">
+<div class="flex justify-between items-center px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto h-full w-full">
+    <!-- Left: PARKAVTO Text styled exactly like on politika.html -->
+    <a class="font-hero-title text-body-lg uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-on-surface-variant transition-colors" href="index.html">
+        ПАРКАВТО
+    </a>
+    
+    <!-- Center/Right: Navigation Links (Desktop) -->
+    <div class="hidden md:flex items-center space-x-lg font-button-label text-button-label ml-auto mr-lg">
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="index.html">ГЛАВНАЯ</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="services.html">УСЛУГИ</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="about.html">О НАС</a>
+        <a class="text-on-surface-variant hover:text-on-surface hover:bg-white-overlay-hover transition-all duration-300 px-sm py-xs" href="contacts.html">КОНТАКТЫ</a>
+
+    </div>
+    
+    <!-- Right: Burger/Zap Button -->
+    <div class="flex items-center gap-md">
+        <div class="hidden md:flex items-center gap-md">
+            <button class="bg-primary-container text-on-surface border border-outline px-lg py-sm rounded hover:bg-white-overlay-hover scale-95 active:scale-90 transition-transform font-button-label text-button-label">
+                ЗАПИСАТЬСЯ
+            </button>
+        </div>
+        <button id="burger-btn" class="md:hidden text-on-surface flex items-center">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</div>
+</header>
+            <button
+                class="hidden md:flex items-center justify-center bg-primary-container text-primary font-button-label text-button-label px-6 py-2 rounded-DEFAULT border border-outline-variant hover:bg-white-overlay-hover transition-all duration-300 scale-95 active:scale-90">
+                ЗАПИСАТЬСЯ
+            </button>
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-on-surface">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="flex-grow pt-[120px] pb-3xl px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto w-full">
+        <!-- Hero Section -->
+        <section class="mb-4xl relative overflow-hidden">
+            <div
+                class="absolute -top-3xl -left-3xl w-[600px] h-[600px] bg-white-overlay rounded-full blur-[60px] opacity-20 pointer-events-none">
+            </div>
+            <h1 class="font-section-title text-section-title md:text-hero-title mb-lg text-on-surface relative z-10">
+                Наши услуги и цены</h1>
+            <p class="font-body-lg text-body-lg text-text-muted max-w-2xl relative z-10">Прецизионное обслуживание и
+                ремонт автомобилей премиум-класса. Безупречное качество в каждой детали.</p>
+        </section>
+        <!-- Services Section -->
+        <section class="mb-3xl space-y-2xl">
+            <!-- Category 1: Техническое обслуживание -->
+            <div
+                class="bg-surface-container-lowest rounded-none border border-outline-variant hover:border-outline transition-colors relative overflow-hidden group flex flex-col lg:flex-row">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-white-overlay to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none z-0">
+                </div>
+                <div
+                    class="w-full lg:w-2/5 relative aspect-video lg:aspect-auto lg:h-auto border-b lg:border-b-0 lg:border-r border-outline-variant overflow-hidden">
+                    <img loading="lazy" decoding="async" alt="Техническое обслуживание"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAli-uPTVT7sPbW_NXvLVx_sRzjy-rmiaao4zPAwQRPhPiVZH7Fy7MxIlNbhEqzR_8t6IJDcM4bsGk_dEgRDct9OUtgoAc3-uSzQ04luROyA6ejGBDLagURZs304oQAZ-v9WuiIbYOInKmdm9ZNthSd93WKHsTH4NkrLYz1Wpop3vSSxqNHJ8CxFgtvS9ycKOEyDk91USqawum7lgCrbe6MN8t0yaKlmBm3-TSEumxiOKyon5URRgXCst-mo4qg23Sw5_Fq-9rmBXQ" />
+                </div>
+                <div class="w-full lg:w-3/5 p-md md:p-xl relative z-10 flex flex-col justify-center">
+                    <h2
+                        class="font-headline-md text-headline-md mb-md md:mb-xl text-on-surface border-b border-outline-variant pb-md relative z-10">
+                        Техническое обслуживание</h2>
+                    <ul
+                        class="space-y-sm md:space-y-md relative z-10 max-h-[400px] overflow-y-auto pr-2 md:pr-4 custom-scrollbar">
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Диагностика подвески</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Диагностика течей двс</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Диагностика течей антифриза</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена масла в двигателе</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 200 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена масла в АКПП</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена воздушного фильтра</span>
+                            <span class="font-button-label text-button-label text-primary">от 200 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена топливного фильтра</span>
+                            <span class="font-button-label text-button-label text-primary">от 400 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена масла в мосту</span>
+                            <span class="font-button-label text-button-label text-primary">от 400 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена салонного фильтра</span>
+                            <span class="font-button-label text-button-label text-primary">от 400 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена охлаждающей жидкости</span>
+                            <span class="font-button-label text-button-label text-primary">от 800 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена тормозной жидкости</span>
+                            <span class="font-button-label text-button-label text-primary">от 800 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Прокачка тормозной системы</span>
+                            <span class="font-button-label text-button-label text-primary">от 800 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена свечей зажигания</span>
+                            <span class="font-button-label text-button-label text-primary">от 800 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена передних тормозных
+                                колодок</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена задних тормозных
+                                колодок</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сцепления</span>
+                            <span class="font-button-label text-button-label text-primary">от 13 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена ремня ГРМ</span>
+                            <span class="font-button-label text-button-label text-primary">от 7 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Осмотр автомобиля при
+                                купле-продажа</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Диагностика электронных
+                                систем</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена тормозных дисков</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Category 2: Трансмиссия -->
+            <div
+                class="bg-surface-container-lowest rounded-none border border-outline-variant hover:border-outline transition-colors relative overflow-hidden group flex flex-col lg:flex-row-reverse">
+                <div
+                    class="absolute inset-0 bg-gradient-to-l from-white-overlay to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none z-0">
+                </div>
+                <div
+                    class="w-full lg:w-2/5 relative aspect-video lg:aspect-auto lg:h-auto border-b lg:border-b-0 lg:border-l border-outline-variant overflow-hidden">
+                    <img loading="lazy" decoding="async" alt="Трансмиссия (КПП)"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDET88mBkqPNycJgFceBF9edheiW8tpYuPXePibPmaSg2V4BW80EutskIJ932WOqTeCfaVdJpHXgxb2IxNw8DX0bj2T-_7BXdnsFioOoXLyUHLBUfZS8EVCFOxKrVi9-Qgurz3mmd1lUcKEDa2knKsFvpRiK58DxI8krxpFBHameAVQu7QMiKwqubbNUic50UqyarQkhfSfSdqXw4ISUfOEJD6EvHIRAAysWR73sLaDIjG-5OYiNF99YLyt8Zrigt8yESeSOc6W_o" />
+                </div>
+                <div class="w-full lg:w-3/5 p-md md:p-xl relative z-10 flex flex-col justify-center">
+                    <h2
+                        class="font-headline-md text-headline-md mb-md md:mb-xl text-on-surface border-b border-outline-variant pb-md relative z-10">
+                        Трансмиссия (КПП)</h2>
+                    <ul
+                        class="space-y-sm md:space-y-md relative z-10 max-h-[400px] overflow-y-auto pr-2 md:pr-4 custom-scrollbar">
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сцепления</span>
+                            <span class="font-button-label text-button-label text-primary">от 13 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена главного цилиндра
+                                сцепления</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена КПП</span>
+                            <span class="font-button-label text-button-label text-primary">от 16 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена АКПП</span>
+                            <span class="font-button-label text-button-label text-primary">от 17 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена привода в сборе</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена пыльника привода
+                                внутреннего</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена пыльника привода
+                                наружного</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена раздатки</span>
+                            <span class="font-button-label text-button-label text-primary">от 4 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена маховика</span>
+                            <span class="font-button-label text-button-label text-primary">от 13 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сальника привода</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 800 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена карданного вала</span>
+                            <span class="font-button-label text-button-label text-primary">от 5 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена эластичной муфты
+                                кардана</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена подвесного подшипника</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена крестовины</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена троса сцепления</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена троса спидометра</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена редуктора</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 900 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Category 3: Подвеска -->
+            <div
+                class="bg-surface-container-lowest rounded-none border border-outline-variant hover:border-outline transition-colors relative overflow-hidden group flex flex-col lg:flex-row">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-white-overlay to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none z-0">
+                </div>
+                <div
+                    class="w-full lg:w-2/5 relative aspect-video lg:aspect-auto lg:h-auto border-b lg:border-b-0 lg:border-r border-outline-variant overflow-hidden">
+                    <img loading="lazy" decoding="async" alt="Подвеска"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK-Jaag9hEPQiChHVGP2m-qbIgHIABIJk2IVG7727vHXewvsseLIx7UEurjTun8gCAFUPbBe0x7WwakE2ByHeRsJXyWyfGzrD0yjvjUZI50sJ2bMPSBHj595cnd5j0G0xAhCrTlNWWP46TiJvlpUIs6CLL6GoEcWvcHaeXyOFbIkwz-x84dIvlz1DbSbCl0xqdjRLdLmAWxrtRo02arZJamaX-s2nzCyA9JVQAxy_oL-bml_azwpX0JG_b0CVOKljfS_dR002WB9c" />
+                </div>
+                <div class="w-full lg:w-3/5 p-md md:p-xl relative z-10 flex flex-col justify-center">
+                    <h2
+                        class="font-headline-md text-headline-md mb-md md:mb-xl text-on-surface border-b border-outline-variant pb-md relative z-10">
+                        Подвеска (Передняя и Задняя)</h2>
+                    <ul
+                        class="space-y-sm md:space-y-md relative z-10 max-h-[400px] overflow-y-auto pr-2 md:pr-4 custom-scrollbar">
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена амортизаторов</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена шаровой</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена верхнего рычага</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена нижнего рычага</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена переднего подшипника
+                                ступицы</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена втулки стабилизатора</span>
+                            <span class="font-button-label text-button-label text-primary">от 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена передней пружины</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена стабилизатора</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена ступицы</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена передней балки</span>
+                            <span class="font-button-label text-button-label text-primary">от 5 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена опоры стоек</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена стоек стабилизатора</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сайлентблока рычага</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена подшипника задней
+                                ступицы</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена реактивной тяги</span>
+                            <span class="font-button-label text-button-label text-primary">от 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена заднего амортизатора</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 200 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена задней пружины</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена подшипника</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 200 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена полуоси</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 300 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена задний балки</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сайлентблоков задней
+                                балки</span>
+                            <span class="font-button-label text-button-label text-primary">от 3 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена втулок амортизатора</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена реактивных тяг,
+                                комплект</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 600 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Category 4: Двигатель -->
+            <div
+                class="bg-surface-container-lowest rounded-none border border-outline-variant hover:border-outline transition-colors relative overflow-hidden group flex flex-col lg:flex-row-reverse">
+                <div
+                    class="absolute inset-0 bg-gradient-to-l from-white-overlay to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none z-0">
+                </div>
+                <div
+                    class="w-full lg:w-2/5 relative aspect-video lg:aspect-auto lg:h-auto border-b lg:border-b-0 lg:border-l border-outline-variant overflow-hidden">
+                    <img loading="lazy" decoding="async" alt="Двигатель"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYNKv89x-_b5r8NxFIJ2Bh-x_sXy9Qc8fUgJanGbrTQRi-L9SgQma5Sei58fDBL5JnOtVpA9dhATV9rCPIA5Wt1iYzu2uOAP3Zqbjc_f-4IZXWduCMHOQoaez9HxnLfvNwFOyOd9_8kSNmbkBotvGBOL-MDKLvcr1ctsAp-FrYOW-OMjEQGgxebWsGIqt8eu6kNHWsezx_TjH52gvnU6934_QSVmmguiPEf60TfsmExxzOb4qjZHWkYU1G76SpMifgOwA_O9SNw40" />
+                </div>
+                <div class="w-full lg:w-3/5 p-md md:p-xl relative z-10 flex flex-col justify-center">
+                    <h2
+                        class="font-headline-md text-headline-md mb-md md:mb-xl text-on-surface border-b border-outline-variant pb-md relative z-10">
+                        Двигатель</h2>
+                    <ul
+                        class="space-y-sm md:space-y-md relative z-10 max-h-[400px] overflow-y-auto pr-2 md:pr-4 custom-scrollbar">
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена переднего сальника
+                                (коленвала)</span>
+                            <span class="font-button-label text-button-label text-primary">от 2 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена заднего сальника
+                                (коленвала)</span>
+                            <span class="font-button-label text-button-label text-primary">от 15 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена сальника распредвала</span>
+                            <span class="font-button-label text-button-label text-primary">от 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена прокладки поддона</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена масляного насоса</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена ремня генератора</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 200 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена помпы</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена коллекторных прокладок</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена опоры двигателя</span>
+                            <span class="font-button-label text-button-label text-primary">от 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена опору двигателя КПП</span>
+                            <span class="font-button-label text-button-label text-primary">от 500 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замер компрессии</span>
+                            <span class="font-button-label text-button-label text-primary">от 600 ₽</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                            <span class="font-body-md text-body-md text-on-surface">Замена ремня гидроусилителя</span>
+                            <span class="font-button-label text-button-label text-primary">от 1 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Category 5: Глушитель, Топливная система, Система охлаждения, Эвакуатор -->
+            <div
+                class="bg-surface-container-lowest rounded-none border border-outline-variant hover:border-outline transition-colors relative overflow-hidden group flex flex-col">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-white-overlay to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none z-0">
+                </div>
+                <div class="p-md md:p-xl relative z-10 grid grid-cols-1 md:grid-cols-2 gap-xl">
+                    <div>
+                        <h2
+                            class="font-headline-md text-headline-md mb-lg text-on-surface border-b border-outline-variant pb-md relative z-10">
+                            Глушитель</h2>
+                        <ul class="space-y-sm relative z-10">
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена прокладки
+                                    приемной трубы</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 000 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена приемной
+                                    части</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 000 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена средней
+                                    части</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    800 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена задней
+                                    части</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    800 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена одного
+                                    хомута</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    300 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Сварочные работы
+                                    глушителя</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 500 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена прокладки
+                                    коллектора</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 000 ₽</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-headline-md text-headline-md mb-lg text-on-surface border-b border-outline-variant pb-md relative z-10">
+                            Топливная система</h2>
+                        <ul class="space-y-sm relative z-10 mb-xl">
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена топливного
+                                    фильтра</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    600 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена бензобака</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    4 500 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена топливного насоса
+                                    (электрического)</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 800 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена топливного насоса
+                                    (механического)</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 000 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена топливной трубки
+                                    (магистральной)</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    3 000 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена топливного
+                                    датчика</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 800 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Очистка топливной
+                                    системы</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 500 ₽</span>
+                            </li>
+                        </ul>
+                        <h2
+                            class="font-headline-md text-headline-md mb-lg text-on-surface border-b border-outline-variant pb-md relative z-10 mt-lg">
+                            Система охлаждения</h2>
+                        <ul class="space-y-sm relative z-10 mb-xl">
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена радиатора
+                                    (вентилятора)</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    4 500 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена патрубка</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 500 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm border-b border-surface-container-high group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена тосола,
+                                    антифриза</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 500 ₽</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Замена тосола с
+                                    промывкой</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    1 800 ₽</span>
+                            </li>
+                        </ul>
+                        <h2
+                            class="font-headline-md text-headline-md mb-lg text-on-surface border-b border-outline-variant pb-md relative z-10 mt-lg">
+                            Эвакуатор</h2>
+                        <ul class="space-y-sm relative z-10">
+                            <li
+                                class="flex justify-between items-center py-sm group/item hover:bg-surface-container-low transition-colors px-2">
+                                <span class="font-body-md text-body-md text-on-surface text-sm">Эвакуация
+                                    автомобилей</span>
+                                <span
+                                    class="font-button-label text-button-label text-primary text-sm whitespace-nowrap">от
+                                    4 000 ₽</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Disclaimer -->
+        <section class="mt-2xl border-t border-outline-variant pt-lg text-center">
+            <p class="font-caption text-caption text-text-muted italic flex items-center justify-center gap-sm">
+                <span class="material-symbols-outlined text-[16px]">info</span>
+                Стоимость работ может быть изменена в зависимости от марки и модели транспортного средства.
+                Окончательная смета формируется после осмотра.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+                class="w-full py-2xl bg-surface-container-lowest border-t border-outline-variant flex flex-col md:flex-row justify-between items-center px-gutter-mobile md:px-gutter-desktop max-w-max-width mx-auto gap-lg">
+                <a class="font-hero-title text-headline-md uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-on-surface-variant transition-colors" href="index.html">ПАРКАВТО</a>
+                <div
+                        class="flex flex-col md:flex-row gap-md md:gap-lg font-caption text-caption text-text-muted text-center md:text-left">
+                        <a class="hover:text-on-surface transition-colors" href="politika.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                        <a class="hover:text-on-surface transition-colors" href="#">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a>
+                        <a class="hover:text-on-surface transition-colors" href="contacts.html">СОЦИАЛЬНЫЕ СЕТИ</a>
+                </div>
+                <div class="font-caption text-caption text-secondary">© 2026 ПАРКАВТО. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+        </footer>
+    <style>
+        /* Custom scrollbar for long lists */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-md pt-20 px-gutter-mobile flex flex-col gap-lg md:hidden">
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="index.html">ГЛАВНАЯ</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="services.html">УСЛУГИ</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="about.html">О НАС</a>
+    <a class="text-on-surface text-headline-md font-button-label text-center border-b border-outline-variant pb-sm" href="contacts.html">КОНТАКТЫ</a>
+    <button class="mt-md bg-primary-container text-on-surface border border-outline px-lg py-md rounded hover:bg-white-overlay-hover scale-95 active:scale-90 transition-transform font-button-label text-button-label">
+        ЗАПИСАТЬСЯ
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    const zapBtns = document.querySelectorAll('button');
+    zapBtns.forEach(btn => {
+        if (btn.textContent.toUpperCase().includes('ЗАПИСАТЬСЯ')) {
+            btn.addEventListener('click', () => {
+                window.location.href = 'contacts.html';
+            });
+        }
+    });
+
+    const form = document.querySelector('form');
+    if (form) {
+        const sendBtn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+        if (sendBtn && sendBtn.textContent.toUpperCase().includes('ОТПРАВИТЬ')) {
+            sendBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name')?.value || '';
+                const phone = document.getElementById('phone')?.value || '';
+                const car = document.getElementById('car')?.value || '';
+                const message = document.getElementById('message')?.value || '';
+                const text = `Новая заявка:
+Имя: ${name}
+Телефон: ${phone}
+Авто: ${car}
+Сообщение: ${message}`;
+                const encodedText = encodeURIComponent(text);
+                window.open(`https://wa.me/79161660707?text=${encodedText}`, '_blank');
+            });
+        }
+    }
+});
+</script>
+</body>
+
+</html>

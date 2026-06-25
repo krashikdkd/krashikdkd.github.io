@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>О Нас - ХОРОШАЯ ДЕВОЧКА</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "soft-beige": "#EAE3D9",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c8c7be",
+                        "secondary-fixed": "#ffe088",
+                        "surface-tint": "#5f5e5b",
+                        "on-surface-variant": "#474741",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#e7e1e2",
+                        "surface-bright": "#fdf8f7",
+                        "outline": "#787770",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "graphite-deep": "#2D2D2D",
+                        "on-secondary-fixed-variant": "#574500",
+                        "primary": "#5f5e5b",
+                        "on-tertiary-fixed-variant": "#494647",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-container": "#fcf5f6",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fdf8f7",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary-container": "#747071",
+                        "secondary-container": "#fed65b",
+                        "surface-variant": "#e5e2e0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9d8",
+                        "surface-container-low": "#f7f3f1",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "powder-pink": "#F2D5D5",
+                        "primary-container": "#f9f6f1",
+                        "tertiary-fixed-dim": "#cbc5c6",
+                        "on-primary-container": "#72706d",
+                        "inverse-primary": "#c8c6c2",
+                        "warm-white": "#FFFFFF",
+                        "background": "#fdf8f7",
+                        "on-tertiary-fixed": "#1d1b1c",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "on-secondary-container": "#745c00",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#474743",
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary": "#735c00",
+                        "on-primary-fixed": "#1c1c19",
+                        "tertiary": "#615d5e",
+                        "primary-fixed": "#e5e2dd",
+                        "surface-container": "#f1edec",
+                        "surface-container-highest": "#e5e2e0",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "2rem",
+                        "margin-page": "4rem",
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1.5rem",
+                        "section-gap": "12rem"
+                    },
+                    "fontFamily": {
+                        "subheading-italic": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "subheading-italic": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-md": ["42px", { "lineHeight": "48px", "fontWeight": "500" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        [data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased md:hidden selection:bg-soft-beige selection:text-graphite-deep">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile h-20 transition-all duration-300 shadow-sm" id="topAppBar">
+<button aria-label="Menu" class="text-graphite-deep dark:text-warm-white hover:opacity-70 transition-opacity duration-300 scale-95 active:transition-all focus:outline-none" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-headline-sm font-headline-sm tracking-tighter text-graphite-deep dark:text-warm-white">ХОРОШАЯ ДЕВОЧКА</h1>
+<button class="text-graphite-deep dark:text-warm-white hover:opacity-70 transition-opacity duration-300 scale-95 active:transition-all text-label-caps font-label-caps focus:outline-none">
+            ЗАПИСАТЬСЯ
+        </button>
+</header>
+<!-- NavigationDrawer (Hidden by default) -->
+<div class="fixed inset-0 z-[60] flex flex-col p-margin-mobile bg-soft-beige dark:bg-graphite-deep h-full w-4/5 rounded-r-none shadow-2xl transition-transform duration-500 ease-in-out -translate-x-full" id="navDrawer">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-headline-md font-headline-md text-graphite-deep dark:text-warm-white">МЕНЮ</h2>
+<button class="text-graphite-deep dark:text-soft-beige p-2" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="text-subheading-italic font-subheading-italic text-on-surface-variant dark:text-outline-variant hover:pl-2 transition-all duration-300 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+                УСЛУГИ
+            </a>
+<a class="text-subheading-italic font-subheading-italic text-on-surface-variant dark:text-outline-variant hover:pl-2 transition-all duration-300 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                ГАЛЕРЕЯ
+            </a>
+<a class="text-subheading-italic font-subheading-italic text-graphite-deep dark:text-secondary-fixed italic underline decoration-1 underline-offset-8 hover:pl-2 transition-all duration-300 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+                О НАС
+            </a>
+<a class="text-subheading-italic font-subheading-italic text-on-surface-variant dark:text-outline-variant hover:pl-2 transition-all duration-300 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                КОНТАКТЫ
+            </a>
+</nav>
+</div>
+<!-- Drawer Overlay -->
+<div class="fixed inset-0 bg-graphite-deep/50 z-[55] hidden transition-opacity duration-300 opacity-0" id="drawerOverlay" onclick="toggleDrawer()"></div>
+<main class="pt-20 pb-32 overflow-x-hidden">
+<!-- 1. Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] mb-24 overflow-hidden">
+<img alt="Салон красоты интерьер" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxcv0jf4cuOsVLWIUFsfZAaHZ6cDEdVLYgoZIznS-0ehJpLlvRIKYODMk48Qw0JFaGBwcEzHDLTNc76VRO3c85f-4S5Qgxwdj3yJS8sJKJnsEjsVBOSPLVQ4uhTTzURWa8kzsIzT6On0ZY0jCpueeeqo8ZKOBXwaRyb48PkZ_0umTKlzV4BPPR4pNyi9Koqt4vuHL-xrjDuzju7p04PREXfCdVhPLrfQTe_jpYK5a09oChmf-MWdDSaNxdp99fEjgyOnXwLy0nWeo"/>
+<!-- Gradient Overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep/80 via-graphite-deep/30 to-transparent"></div>
+<div class="absolute bottom-12 left-margin-mobile pr-margin-mobile">
+<h2 class="text-display-lg-mobile font-display-lg-mobile text-warm-white leading-tight">
+                    Пространство, где рождается сияние
+                </h2>
+</div>
+</section>
+<!-- 2. Personalization and Care text block -->
+<section class="px-margin-mobile mb-section-gap">
+<div class="relative pb-12 border-b border-outline-variant/30">
+<h3 class="text-headline-sm font-headline-sm text-graphite-deep mb-8 pr-12">
+                    Философия заботы и индивидуального подхода
+                </h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-12 leading-relaxed">
+                    Мы верим, что истинная красота начинается с глубокого понимания вашей уникальности. В нашем пространстве каждая деталь создана для того, чтобы подчеркнуть вашу индивидуальность. Мы не просто оказываем услуги, мы создаем ритуал заботы, где ваше благополучие — наш главный приоритет.
+                </p>
+<div class="flex gap-8 items-end">
+<div>
+<span class="block text-display-lg-mobile font-display-lg-mobile text-graphite-deep">10+</span>
+<span class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-widest mt-2 block">ЛЕТ ОПЫТА</span>
+</div>
+<div>
+<span class="block text-display-lg-mobile font-display-lg-mobile text-graphite-deep">100%</span>
+<span class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-widest mt-2 block">ПРЕМИУМ КАЧЕСТВО</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Our Team -->
+<section class="px-margin-mobile mb-section-gap">
+<div class="flex items-center gap-4 mb-12">
+<h3 class="text-headline-sm font-headline-sm text-graphite-deep">Наша команда</h3>
+<div class="h-[1px] bg-graphite-deep flex-grow mt-2"></div>
+</div>
+<div class="flex flex-col gap-12">
+<!-- Team Member 1 -->
+<div class="relative w-full aspect-[3/4] group">
+<img alt="Anna" class="w-full h-full object-cover filter grayscale sepia-[.1]" data-alt="A close-up portrait of a sophisticated female stylist in a minimalist modern salon. She is wearing chic, tailored professional attire in soft neutral tones. The lighting is soft and flattering, highlighting her natural makeup and confident, warm expression. The background features subtle textures of a premium beauty space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDREEU7bP5WDmcCixTjY6ugcX7xPfoa5uGhAf_zB60st5bp11SEYueIwANYR2w7iNBkZAXf7U8URXi_Z5Vq0pxF5riV3Uh1bixF-b99RyFlEdRyuzGjS3csxmBqWqhq1xOOK7MHR8ohv3N4SdKONRzPC5RPRN745j6ZWkurF2Zfq7_XMNWOXeNBLgG2N69xG1LRTmez6mmwhHpK2yahM0IJ2aQulkD6Qle2WZs7Rul1kmJCRWn6T-W5qRrFOlzlNg2CvVS_ZMtPugI"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-graphite-deep/90 to-transparent">
+<h4 class="text-subheading-italic font-subheading-italic text-warm-white">Анна</h4>
+<p class="text-label-caps font-label-caps text-soft-beige mt-2">ТОП-СТИЛИСТ</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="relative w-full aspect-[3/4] ml-6 mr-[-1.5rem] group">
+<img alt="Maria" class="w-full h-full object-cover filter grayscale sepia-[.1]" data-alt="An elegant portrait of a female colorist working in a high-end salon environment. She is dressed in stylish minimalist black clothing. The ambient lighting casts soft, warm glows, emphasizing her professional yet approachable demeanor. The background softly blurs luxurious salon equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBta-n8sOYCqobj3pKu44ngRohd-XiuJ5lk5RUk5fK-fRvh4x9oDdjII5BDLZj6eVgiNbqP3pXvWMUSNP1KYmJN1lDwVsATInymhdzKjn9wPxhSMPN-UAocL8hCzqRnu_pJISnGExPF0_oeSigddfytU7j4Oi6k-H7qfdpcZQFzE5zkt8O6FWEaTQa_mMAv69Ev0Yh09tPyVWRy2uJnGC9CvI12FvrWHqEA5JPfs6dImUHYoDEUPh_eGAtiTcQdrX28skzphcj0SMw"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-graphite-deep/90 to-transparent">
+<h4 class="text-subheading-italic font-subheading-italic text-warm-white">Мария</h4>
+<p class="text-label-caps font-label-caps text-soft-beige mt-2">КОЛОРИСТ-ЭКСПЕРТ</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="relative w-full aspect-[3/4] group">
+<img alt="Elena" class="w-full h-full object-cover filter grayscale sepia-[.1]" data-alt="A portrait of a confident female beauty professional in a bright, modern clinic space. She wears a pristine, stylish uniform. Natural light floods the room, creating a clean, airy, and luxurious atmosphere. Her expression is serene and welcoming." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIV3wKaXhVY5KUL7c2O2l8CZW7UPft3ANrUjAYPaFK4Px3nnD5OVNJHFIxjft0e6npgoOnDU2QYMLPXw2o_t5iDlHdTflkg4Kym6tJYNYptzruTtymm-y2KAD8iTOFC3302i9dOhPLw7-Qi5Qp_qk-Jkb3shwdn7pFv0Lz4nIYV3rn-eWgZAv8qI11yUgxOO4piPV7buhpgnkuhTrDcjR-gh8fD96SkxYrPcI0EevjLPzgFco57z0RZj3_agGm1LnAcOXPJ2jQuYk"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-graphite-deep/90 to-transparent">
+<h4 class="text-subheading-italic font-subheading-italic text-warm-white">Елена</h4>
+<p class="text-label-caps font-label-caps text-soft-beige mt-2">КОСМЕТОЛОГ</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Detailed Contacts & Interior Photos -->
+<section class="px-margin-mobile mb-section-gap">
+<h3 class="text-headline-sm font-headline-sm text-graphite-deep mb-8">Свяжитесь с нами</h3>
+<div class="flex flex-col gap-8 mb-12">
+<div class="border-b border-outline-variant/30 pb-4">
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-2">АДРЕС</p>
+<p class="text-body-md font-body-md text-graphite-deep">г. Москва, Патриаршие пруды, Малая Бронная, 15</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-2">ТЕЛЕФОН</p>
+<a class="text-body-md font-body-md text-graphite-deep block" href="tel:+79991234567">+7 (999) 123-45-67</a>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-2">ЧАСЫ РАБОТЫ</p>
+<p class="text-body-md font-body-md text-graphite-deep">Ежедневно 10:00 - 22:00</p>
+</div>
+<div class="flex gap-6 mt-4">
+<a class="w-12 h-12 rounded-full border border-graphite-deep flex items-center justify-center text-graphite-deep hover:bg-graphite-deep hover:text-warm-white transition-colors" href="#">
+<span class="text-label-caps font-label-caps">IG</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-graphite-deep flex items-center justify-center text-graphite-deep hover:bg-graphite-deep hover:text-warm-white transition-colors" href="#">
+<span class="text-label-caps font-label-caps">TG</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-graphite-deep flex items-center justify-center text-graphite-deep hover:bg-graphite-deep hover:text-warm-white transition-colors" href="#">
+<span class="text-label-caps font-label-caps">WA</span>
+</a>
+</div>
+</div>
+<!-- Asymmetric Interior Images -->
+<div class="relative h-[400px]">
+<img alt="Interior detail 1" class="absolute top-0 left-0 w-2/3 h-64 object-cover z-10 shadow-lg" data-alt="A detailed view of a luxurious salon workstation. A sleek, minimalist styling chair sits in front of an elegantly lit, frameless mirror. The interior features soft beige tones, warm wooden textures, and soft diffused lighting, creating a calm, high-end editorial vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJmj9vpIyedBACPXmOFc5aS-C4D96x3MHrcrEfl4Hrk8roytUvPpFzI1jH6McDKkSgnAUIB6FAI4SEzEG-A_3h-CJcyYX6kMpM6GkZHWOjl_vQQwpNxXTW2BLT5kRAsHZQI2FHqQ-eF2_Sq3n5OauXKXqgGEExOx0HgNgStUIMuJMP6LaX9L5XI9Z-8s3C3Vebl0-r_kczhzuWOyf3k24sYENlgq2I8Fmp5V_ZdA73m4D5NXm1Q5-ZCIF6FNIm-xiDo54zY94wUKE"/>
+<img alt="Interior detail 2" class="absolute bottom-0 right-0 w-3/4 h-56 object-cover z-20 shadow-lg" data-alt="A close-up shot of premium hair care products neatly arranged on a pristine white marble shelf. The lighting is soft and natural, emphasizing the minimalist packaging and the clean, sophisticated atmosphere of the beauty space. The mood is refined and exclusive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCreaiS13n4YFZCSmTUPHRYcE6PmPCZiniM3BDIfOcseNyhM3iceztShuvYU1EzJ7Xkunb1moNK2wiC1htd2ZYcgS0_aLaBlOnYB_akVH0GHBjBBtpPC-jnWt4ReosmPknDpK1TQW3BnvKNspdb2b7HpGeA3hy03naRQztAqz64xqmHmgKQ-5BP0RbsUITIJ0GNInVg7ODkIzbu8auIGKQuMqarNdprWSLdoROWz6W9Q9vOmUFCqVUG8w84LVDMXQP8oz5HtZeZUSc"/>
+</div>
+</section>
+<!-- 5. Waiting for you -->
+<section class="relative w-full h-[60vh] min-h-[500px]">
+<img alt="Салон интерьер 2" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJOYldgTmr8P2KH69QWQ70KKINeMdSc2pb28xoCplkI2iIdIxej44Q997TL2mqtbz7Ug3Bezy5EIDnRk5-yoXCpA4jRYudB6ixgxdsWxiNBlO01NhhL9cks92UwaEJm3f5434i-_zFR8CJlhQa0KeCmHSSBma0c0y2H3THus_2NElfZE8ifjOaHdCNJCfZl4Q9CybWQNmztxLN9Z8OeGtDtOFNVWddjf9OSBZ5q6X0fyOeKgVx1zZDsS5NHLa99XsfX_3zg7RO0tQ"/>
+<div class="absolute inset-0 bg-graphite-deep/40 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center px-margin-mobile">
+<h3 class="text-headline-md font-headline-md text-warm-white mb-8">Ждем вас</h3>
+<button class="bg-warm-white text-graphite-deep px-8 py-4 text-label-caps font-label-caps tracking-widest hover:bg-soft-beige transition-colors">
+                     ПРОЛОЖИТЬ МАРШРУТ
+                 </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] rounded-full z-50 flex justify-around items-center py-3 px-6 bg-graphite-deep dark:bg-surface-container-lowest shadow-xl">
+<a class="text-warm-white/60 p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</a>
+<a class="text-warm-white/60 p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</a>
+<a class="bg-soft-beige/20 text-warm-white rounded-full p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined" data-icon="location_on" data-weight="fill">location_on</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile py-12 flex flex-col items-center gap-8 text-center bg-surface dark:bg-graphite-deep border-t border-outline-variant/30 pb-32">
+<div class="flex gap-6">
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">INSTAGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">TELEGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">WHATSAPP</a>
+</div>
+<p class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant">© 2024 ХОРОШАЯ ДЕВОЧКА. EDITORIAL BEAUTY.</p>
+</footer>
+<script>
+        // Drawer toggle logic
+        function toggleDrawer() {
+            const drawer = document.getElementById('navDrawer');
+            const overlay = document.getElementById('drawerOverlay');
+            
+            if (drawer.classList.contains('-translate-x-full')) {
+                // Open
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                // Close
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Hide App Bar on scroll down, show on scroll up
+        let lastScrollTop = 0;
+        const topAppBar = document.getElementById('topAppBar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 80) {
+                // Scroll Down
+                topAppBar.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll Up
+                topAppBar.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, false);
+    </script>
+</body></html>

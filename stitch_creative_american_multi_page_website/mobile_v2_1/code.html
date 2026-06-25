@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Хорошая Девочка - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "soft-beige": "#EAE3D9",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c8c7be",
+                        "secondary-fixed": "#ffe088",
+                        "surface-tint": "#5f5e5b",
+                        "on-surface-variant": "#474741",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#e7e1e2",
+                        "surface-bright": "#fdf8f7",
+                        "outline": "#787770",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "graphite-deep": "#2D2D2D",
+                        "on-secondary-fixed-variant": "#574500",
+                        "primary": "#5f5e5b",
+                        "on-tertiary-fixed-variant": "#494647",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-container": "#fcf5f6",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fdf8f7",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary-container": "#747071",
+                        "secondary-container": "#fed65b",
+                        "surface-variant": "#e5e2e0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9d8",
+                        "surface-container-low": "#f7f3f1",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "powder-pink": "#F2D5D5",
+                        "primary-container": "#f9f6f1",
+                        "tertiary-fixed-dim": "#cbc5c6",
+                        "on-primary-container": "#72706d",
+                        "inverse-primary": "#c8c6c2",
+                        "warm-white": "#FFFFFF",
+                        "background": "#fdf8f7",
+                        "on-tertiary-fixed": "#1d1b1c",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "on-secondary-container": "#745c00",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#474743",
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary": "#735c00",
+                        "on-primary-fixed": "#1c1c19",
+                        "tertiary": "#615d5e",
+                        "primary-fixed": "#e5e2dd",
+                        "surface-container": "#f1edec",
+                        "surface-container-highest": "#e5e2e0",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "2rem",
+                        "margin-page": "4rem",
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1.5rem",
+                        "section-gap": "12rem"
+                    },
+                    "fontFamily": {
+                        "subheading-italic": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "subheading-italic": ["24px", { "lineHeight": "32px", "fontWeight": "400", "fontStyle": "italic" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600", "textTransform": "uppercase" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-md": ["42px", { "lineHeight": "48px", "fontWeight": "500" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden md:hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile h-20">
+<button class="text-graphite-deep dark:text-warm-white hover:opacity-70 transition-opacity duration-300 scale-95 active:transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+<div class="text-headline-sm font-headline-sm tracking-tighter text-graphite-deep dark:text-warm-white">ХОРОШАЯ ДЕВОЧКА</div>
+<button class="text-label-caps font-label-caps text-graphite-deep dark:text-warm-white hover:opacity-70 transition-opacity duration-300 scale-95 active:transition-all">ЗАПИСАТЬСЯ</button>
+</header>
+<!-- Canvas -->
+<main class="pt-20 pb-32 flex flex-col gap-section-gap">
+<!-- 1. Hero -->
+<section class="relative h-[80vh] w-full flex flex-col justify-end px-margin-mobile pb-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero background image of a luxurious salon interior" class="w-full h-full object-cover opacity-90 grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJOYldgTmr8P2KH69QWQ70KKINeMdSc2pb28xoCplkI2iIdIxej44Q997TL2mqtbz7Ug3Bezy5EIDnRk5-yoXCpA4jRYudB6ixgxdsWxiNBlO01NhhL9cks92UwaEJm3f5434i-_zFR8CJlhQa0KeCmHSSBma0c0y2H3THus_2NElfZE8ifjOaHdCNJCfZl4Q9CybWQNmztxLN9Z8OeGtDtOFNVWddjf9OSBZ5q6X0fyOeKgVx1zZDsS5NHLa99XsfX_3zg7RO0tQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep/80 via-graphite-deep/20 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col gap-4 text-warm-white">
+<h1 class="text-display-lg-mobile font-display-lg-mobile tracking-tight">Твое<br/>пространство<br/>красоты в<br/>центре Сочи</h1>
+<p class="text-body-md font-body-md max-w-xs text-warm-white/80">Ощутите премиальный уровень заботы в самом сердце города.</p>
+<div class="mt-4">
+<button class="bg-warm-white text-graphite-deep px-8 py-4 text-label-caps font-label-caps hover:bg-soft-beige transition-colors duration-300">ЗАБРОНИРОВАТЬ</button>
+</div>
+</div>
+</section>
+<!-- 2. Philosophy -->
+<section class="px-margin-mobile flex flex-col gap-8 relative">
+<div class="text-label-caps font-label-caps text-outline mb-4">01 — Философия</div>
+<h2 class="text-headline-md font-headline-md leading-tight text-graphite-deep relative z-10 w-3/4">Искусство быть собой</h2>
+<div class="relative mt-8 h-[600px]">
+<img alt="Fashion editorial portrait representing inner beauty and self-expression" class="absolute top-0 right-0 w-2/3 h-auto object-cover z-0 filter sepia-[10%] contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWvwxJEV2pJgTVoRbpoz8wmgKJYXUmyiAKXTbN0XrECNvzst55YlDg_nMUqhj0uCLS7L9BL85EDZWAAVTfwwWA5pBK-HQ8Y9NQBA68de1lL0d3BzW_k9Th9qHWBeI6tb6xTn2fujnhdqgB5uOpIbRo__nPXG9GORy6JhuHHBYn94_EVnrKdeXEOKmFDWm3lAyfl1z-y3qrgbHK5AhLnu7CVs-mOtyp5KkcqbazZq4_dmR9iJZMPoIJWAzeRPF26VkJA96v1w2GR1k"/>
+<img alt="Abstract textures of beauty products highlighting premium quality" class="absolute bottom-0 left-0 w-3/5 h-auto object-cover z-10 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhQdMkdpXkSHuDutxatQBSvt4AlKFXSrkwIpTRCXzF2TqoLYvqWZeu-qhCgoMbHV9SgsmFDIxnVkwXFSWOWRjccCl0TXRGfb3Ul_TSbkyCC0zSZI-Hk9fkChhP_P_f5VF7Emc5hzmiH7BiREKd6gUJJU6FdbaNdWsOcgbTV6SXKtNIoTaEOYHsupsn2BohGE8QgxG8i6mO2hdZm9tKgbW3vM6YdjCeBQjql5ij3m1J7zc9OHCVzGwkLfhIF-lQVU65L5hMfYdtW_g"/>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-8 w-11/12 ml-auto">Мы верим, что истинная красота рождается из гармонии и уверенности в своей уникальности. Наша миссия — подчеркнуть то, что делает вас особенными.</p>
+</section>
+<!-- 3. Creating Sanctuary -->
+<section class="bg-soft-beige py-24 px-margin-mobile relative overflow-hidden -mx-margin-mobile">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="text-label-caps font-label-caps text-graphite-deep/50 mb-8">02 — Атмосфера</div>
+<h2 class="text-headline-sm font-headline-sm text-graphite-deep mb-12">Создавая святилище для вашего спокойствия</h2>
+<div class="flex flex-col gap-6 relative z-10">
+<div class="bg-warm-white/60 backdrop-blur-md p-6 border-l-2 border-graphite-deep">
+<p class="text-body-md font-body-md text-graphite-deep">Каждая деталь нашего интерьера продумана так, чтобы вы могли забыть о суете и погрузиться в атмосферу абсолютного релакса.</p>
+</div>
+</div>
+</section>
+<!-- 4. Our Values -->
+<section class="px-margin-mobile flex flex-col gap-12">
+<div>
+<div class="text-label-caps font-label-caps text-outline mb-4">03 — Наши ценности</div>
+<h2 class="text-headline-md font-headline-md text-graphite-deep">Основа нашего подхода</h2>
+</div>
+<div class="flex flex-col gap-8">
+<!-- Card 1 -->
+<div class="border-b border-outline-variant/30 pb-6 flex flex-col gap-4">
+<div class="text-headline-sm font-headline-sm text-graphite-deep">Premium</div>
+<p class="text-body-md font-body-md text-on-surface-variant">Только лучшие материалы и косметика мировых брендов, доказавшие свою эффективность.</p>
+</div>
+<!-- Card 2 -->
+<div class="border-b border-outline-variant/30 pb-6 flex flex-col gap-4">
+<div class="text-headline-sm font-headline-sm text-graphite-deep">Individual</div>
+<p class="text-body-md font-body-md text-on-surface-variant">Персонализированный подход к каждому гостю, учитывающий все пожелания и особенности.</p>
+</div>
+<!-- Card 3 -->
+<div class="border-b border-outline-variant/30 pb-6 flex flex-col gap-4">
+<div class="text-headline-sm font-headline-sm text-graphite-deep">Tech</div>
+<p class="text-body-md font-body-md text-on-surface-variant">Инновационные методики и современное оборудование для безупречного результата.</p>
+</div>
+</div>
+</section>
+<!-- 5. Detail Section -->
+<section class="px-margin-mobile pb-24 flex flex-col gap-12">
+<div>
+<div class="text-label-caps font-label-caps text-outline mb-4">04 — Детали</div>
+<h2 class="text-headline-sm font-headline-sm text-graphite-deep">В каждой мелочи</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 h-64">
+<img alt="Close-up of premium salon tools and aesthetic details" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnnxGAzpxVMqC_CYFXqaqqVC0BlyJcut64mQ031BGCGt7gyLGEujyWdmCHgk0U-Ic-dcTwSPQGw6Wc5QIANmufBNp68wA1GzW5Y5TkhIBbBlIBG4fUD2PZ7gqJflKa_jV_iSIqfo9y8X8Ex5VbeRMhGXXni3FPFLGQpagUmDX7uEBx1H6GmhZQXdz_hxU5dJdb8rOI1FwHvuk6XD9fLOh1EC7qpIQa5OLkJER4i5aBT7zV1GHM1Yd6OcZ0D1NAzknX707-0PW7NAs"/>
+</div>
+<div class="h-48">
+<img alt="Artistic view of the salon interior focusing on lighting and shadows" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKFaI1bG8l3L5V2ylVmroyLkYIKoDi03F8nHRrQsTm-JLncWCsfcTaPo9AmFi_DwmKAEltF56x3NnqRGA50Nl_Tgvnwwq9h1yhVjTDB1NlB-yR9YnwywOmCLjubr4mytzyi98fgj64n9_CAireNZQ7dOrIFdRrkRkGJjkljRP_57DiDfQRX84vO-I6WiNdxEVKHXmZvpcEi3TxrZY74pvuwl2LYz1gz65fmF0BXXfY1Ah_rkj9O5CDgiR4GvqBNuEyAG_x8bPUUi8"/>
+</div>
+<div class="h-48">
+<img alt="Detailed macro shot of natural textures used in the salon design" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEV5t4KRrS-V7h-r5s_3pi8yMA9tt2S702ZtpweTkr_c5eidQEl_-AMIXyqTGDO6cDhuP2PswDfm5KcdDLsNQUmIBcputia0J49mMi91hrR-QqdjJf9WhVecXNWj0QVIW6DeuF9hWWT832kvjXh4-0IqDVZJ5qhhiA4W5c1GHIXddCRyFvphZ02AKqYjGjW8-k4PZRx25BaPqVYJ52yo5TwMf-cAH_VhLy61YxvrUtQWQumI6CIHYSdJPWzOpU120AzqDTz5dtcU"/>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<p class="text-subheading-italic font-subheading-italic text-graphite-deep text-center max-w-[80%]">"Эстетика в каждом моменте"</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] rounded-full bg-graphite-deep dark:bg-surface-container-lowest shadow-xl z-50 flex justify-around items-center py-3 px-6">
+<a class="text-warm-white/60 p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_month">calendar_month</span>
+</a>
+<a class="bg-soft-beige/20 text-warm-white rounded-full p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+</a>
+<a class="text-warm-white/60 p-3 hover:scale-110 transition-transform scale-90 active:duration-150 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="location_on">location_on</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/30 bg-surface dark:bg-graphite-deep mt-section-gap w-full px-margin-mobile py-12 flex flex-col items-center gap-8 text-center pb-32">
+<div class="text-headline-sm font-headline-sm text-graphite-deep dark:text-soft-beige">ХОРОШАЯ ДЕВОЧКА</div>
+<div class="flex gap-6">
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">INSTAGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">TELEGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500 opacity-80" href="#">WHATSAPP</a>
+</div>
+<p class="text-label-caps font-label-caps text-graphite-deep dark:text-soft-beige">© 2024 ХОРОШАЯ ДЕВОЧКА. EDITORIAL BEAUTY.</p>
+</footer>
+</body></html>

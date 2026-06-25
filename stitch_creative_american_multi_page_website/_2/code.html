@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Услуги и Цены | ХОРОШАЯ ДЕВОЧКА</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "soft-beige": "#EAE3D9",
+                        "primary-fixed": "#e5e2dd",
+                        "warm-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#1d1b1c",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "powder-pink": "#F2D5D5",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1c1b1b",
+                        "tertiary-container": "#fcf5f6",
+                        "on-primary-fixed": "#1c1c19",
+                        "surface": "#fdf8f7",
+                        "surface-container-highest": "#e5e2e0",
+                        "on-tertiary-fixed-variant": "#494647",
+                        "tertiary-fixed-dim": "#cbc5c6",
+                        "on-primary-fixed-variant": "#474743",
+                        "inverse-primary": "#c8c6c2",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#615d5e",
+                        "graphite-deep": "#2D2D2D",
+                        "surface-dim": "#ddd9d8",
+                        "on-primary-container": "#72706d",
+                        "outline": "#787770",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-surface-variant": "#474741",
+                        "background": "#fdf8f7",
+                        "primary-container": "#f9f6f1",
+                        "surface-bright": "#fdf8f7",
+                        "surface-tint": "#5f5e5b",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-variant": "#e5e2e0",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "on-secondary-container": "#745c00",
+                        "surface-container-low": "#f7f3f1",
+                        "outline-variant": "#c8c7be",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-fixed": "#e7e1e2",
+                        "secondary": "#735c00",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "inverse-surface": "#313030",
+                        "surface-container": "#f1edec",
+                        "on-tertiary-container": "#747071",
+                        "primary": "#5f5e5b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "12rem",
+                        "margin-mobile": "1.5rem",
+                        "gutter": "1.5rem",
+                        "margin-page": "4rem",
+                        "element-gap": "2rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "subheading-italic": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "subheading-italic": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "headline-sm": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-md": ["42px", { "lineHeight": "48px", "fontWeight": "500" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-warm-white/80 dark:bg-on-surface/80 backdrop-blur-xl transition-all duration-300 hidden md:flex flex-col">
+<div class="flex justify-between items-center w-full px-margin-page py-6 mx-auto">
+<a class="font-headline-sm text-headline-sm tracking-tighter text-graphite-deep dark:text-soft-beige" href="#">
+                ХОРОШАЯ ДЕВОЧКА
+            </a>
+<div class="flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:tracking-widest transition-all duration-500 opacity-70" href="#">
+                    Услуги
+                </a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:tracking-widest transition-all duration-500" href="#">
+                    Галерея
+                </a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:tracking-widest transition-all duration-500" href="#">
+                    О нас
+                </a>
+<button class="font-label-caps text-label-caps bg-graphite-deep text-warm-white px-8 py-3 hover:bg-surface-tint transition-colors duration-300 uppercase tracking-widest ml-4">
+                    Записаться
+                </button>
+</div>
+</div>
+</nav>
+<!-- Mobile Header Fallback (Simple) -->
+<header class="md:hidden px-margin-mobile py-6 flex justify-center items-center bg-warm-white border-b border-surface-variant">
+<span class="font-headline-sm text-headline-sm tracking-tighter text-graphite-deep">ХОРОШАЯ ДЕВОЧКА</span>
+</header>
+<main class="pt-24 md:pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-page max-w-7xl mx-auto mb-section-gap mt-12 md:mt-24">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-graphite-deep mb-8 max-w-4xl">
+                Искусство <br/> <span class="font-subheading-italic text-subheading-italic md:text-[64px] text-primary italic">ухода за волосами</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-8">
+                Ритуалы красоты, созданные для глубокого восстановления и безупречного вида ваших волос. Мы используем только премиальные составы и индивидуальный подход.
+            </p>
+</section>
+<!-- Offers Banner -->
+<section class="bg-soft-beige py-16 px-margin-mobile md:px-margin-page my-section-gap">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center justify-between">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase block mb-4">Специальное предложение</span>
+<h2 class="font-headline-md text-headline-md text-graphite-deep mb-6">Привилегия первого визита</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Позвольте нам познакомить вас с нашим уровнем сервиса. Дарим скидку на первые процедуры для новых гостей студии.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
+<div class="bg-warm-white p-8 border border-surface-variant flex-1 min-w-[250px]">
+<span class="font-headline-sm text-headline-sm text-graphite-deep block mb-2">-500 ₽</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">На первый визит ухода</span>
+</div>
+<div class="bg-warm-white p-8 border border-surface-variant flex-1 min-w-[250px]">
+<span class="font-headline-sm text-headline-sm text-graphite-deep block mb-2">-1000 ₽</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">На кератин / ботокс</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services List -->
+<section class="px-margin-mobile md:px-margin-page max-w-7xl mx-auto">
+<!-- Service Category 1: Davines -->
+<div class="mb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative">
+<div class="lg:col-span-5 sticky top-32 z-10">
+<span class="font-label-caps text-label-caps border border-outline px-3 py-1 rounded-full mb-6 inline-block text-primary">Итальянский уход</span>
+<h2 class="font-headline-md text-headline-md text-graphite-deep mb-4">Уход Davines</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Премиальный Итальянский уход для волос Davines. Волосы обретают эффект мягкости, увлажненности и блеска, без изменения их структуры ✨ Данная процедура подходит как для окрашенных, так и натуральных волос
+                    </p>
+<div class="flex items-end gap-4 border-t border-surface-variant pt-6">
+<span class="font-body-lg text-body-lg text-graphite-deep">от 4 000 ₽</span>
+<span class="font-body-md text-body-md text-on-surface-variant">до 6 000 ₽</span>
+</div>
+</div>
+<div class="lg:col-span-7 lg:col-start-6">
+<div class="w-full h-[600px] bg-surface-variant relative overflow-hidden mb-12">
+<img alt="Процедура ухода Davines в салоне" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7uDPznuYZ-UhLccQ8pyfKbvIajQcKBJinmAeUjHvtjx6-lchieAaTvXRS6cS7OCwSzldR9jUd-QSOm_4ZlUenWn59v8xc-DIXu5a95tdKBJVbSnrNpEmIG7CGlajYn0Bv9zJQmGmh0xWBa2HKn1IOcuoLRZIYtcBcbY7vCMJmIAo4u9RE1NbWJHukvEK65rGx-z3irLq4h9i-PwRYXMR4DKWrWBBN5lqkZSpq2A2B073Gmf0X5CeM1O0L03zrFZM0oh6IHZa0J00"/>
+</div>
+<!-- Sub-services / Pricing Details if needed -->
+<div class="space-y-6 mb-12">
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Короткие волосы</span>
+<span class="font-body-md text-body-md text-on-surface-variant">4 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Средняя длина</span>
+<span class="font-body-md text-body-md text-on-surface-variant">5 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Длинные волосы</span>
+<span class="font-body-md text-body-md text-on-surface-variant">6 000 ₽</span>
+</div>
+</div>
+<div class="w-full aspect-square bg-surface-variant relative overflow-hidden hidden md:block">
+<img alt="Lifestyle детали" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_iv6Pcy1C9MCDJA2E4x7hvgRnDI9jtqEsjc-SBD96XRo2sIuEOVR29-MQ4NO3GjBLl6L6d88Mtd3oAozCKMF1cEXSTZ5yjCCdBBZ7y6wEcq0bzZfZt7m2iKzgtlfLwANNRm96ajzDaCDNf2DqwII93xaM53zSt6OWrYbp7T139jMXqd_wfIzNHj_9PHReF0YV5GKUjohLN5DjzOzLDWt_8nqqBuGvPHEFJ8cvu9jo-R3JphC7fijXwtP1QbWBTHXwo0564-wVE9M"/>
+</div>
+</div>
+</div>
+<!-- Service Category 2: Холодное восстановление -->
+<div class="mb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 order-2 lg:order-1 flex flex-col gap-8">
+<div class="w-full aspect-[4/5] bg-surface-variant relative overflow-hidden">
+<img alt="Результат холодного восстановления волос" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmryIMJMuJBjkKtXuXFcrKWTO5eTzgdLa0wOJPxgTHfAek3T3pSUPZdwpy9jVmKDBODVqbQ-em5kLDvnESXmZdr8LNeMYbABJan4gdKDYVrYGOyxJLjmhmY-7g45OCXWhjEsh8l0MjJ3d5qRkGFbSNjeHLvqudEtx7WfhxgW4MxRzIcAi7H9rnZpMAqzfaaSn5ON8fkQ_HuVT03ISI2CPVxh7CuWO-AsO2cX7olrll6sI1j_AU9xhwpYbvUk0_uqdYE-gY56zbKDE"/>
+</div>
+<div class="w-3/4 aspect-[4/3] bg-surface-variant relative overflow-hidden self-end hidden md:block">
+<img alt="Интерьер салона" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfRKtD-766tpgJPggNhBa7-cAkGClvod2c61tgcU5teZuKZch-qE56fi3l3-Qu6Lxiw2Ir7nTlLEjsllaN6I9sIfxrNA9mzcT-R0m6sB6EwwyRIbGcGI4iXo7QcP0tMrpCOErx7e4De9CAyfmODrF-GKgirqUUnlI3joKbBi4nIy0UjGpf8Jps5l9vIvgQS3dAJPnQCYv9RVb5qdaTDn35vz1dx3azWPbaP1ev7P0qw_AeozbpW_ITVKVKL4wBx3EpR0tEOvfvkX8"/>
+</div>
+</div>
+<div class="lg:col-span-5 lg:col-start-8 order-1 lg:order-2">
+<span class="font-label-caps text-label-caps border border-outline px-3 py-1 rounded-full mb-6 inline-block text-primary">На молекулярном уровне</span>
+<h2 class="font-headline-md text-headline-md text-graphite-deep mb-4">Холодное восстановление</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Для очень поврежденных, многочисленно осветленных волос, который восстанавливает их на молекулярном уровне. Процедура направлена на глубокий уход и уменьшение степени повреждения волос.
+                    </p>
+<div class="flex items-end gap-4 border-t border-surface-variant pt-6 mb-8">
+<span class="font-body-lg text-body-lg text-graphite-deep">от 4 000 ₽</span>
+<span class="font-body-md text-body-md text-on-surface-variant">до 6 000 ₽</span>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Короткие волосы</span>
+<span class="font-body-md text-body-md text-on-surface-variant">4 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Средние волосы</span>
+<span class="font-body-md text-body-md text-on-surface-variant">5 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant pb-4">
+<span class="font-body-lg text-body-lg text-graphite-deep">Длинные волосы</span>
+<span class="font-body-md text-body-md text-on-surface-variant">6 000 ₽</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Category 3: Кератин и Ботокс -->
+<div class="mb-32 max-w-5xl mx-auto">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps border border-outline px-3 py-1 rounded-full mb-6 inline-block text-primary">Идеальная гладкость</span>
+<h2 class="font-headline-md text-headline-md text-graphite-deep">Кератин и Ботокс</h2>
+</div>
+<div class="text-left bg-warm-white p-8 md:p-12 border border-surface-variant shadow-sm relative">
+<div class="absolute -top-10 -left-10 text-[120px] font-headline-sm text-surface-container-high opacity-50 hidden md:block select-none pointer-events-none">Smooth</div>
+<div class="space-y-8 relative z-10">
+<div class="flex flex-col sm:flex-row justify-between sm:items-baseline border-b border-surface-variant pb-6 gap-2">
+<div>
+<span class="font-body-lg text-body-lg text-graphite-deep block">Короткие волосы (до плеч)</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1 block">Кератиновое выпрямление / Ботокс</span>
+</div>
+<span class="font-body-lg text-body-lg text-graphite-deep whitespace-nowrap">5 500 ₽</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-between sm:items-baseline border-b border-surface-variant pb-6 gap-2">
+<div>
+<span class="font-body-lg text-body-lg text-graphite-deep block">Средняя длина (до лопаток)</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1 block">Кератиновое выпрямление / Ботокс</span>
+</div>
+<span class="font-body-lg text-body-lg text-graphite-deep whitespace-nowrap">7 000 — 8 000 ₽</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-between sm:items-baseline border-b border-surface-variant pb-6 gap-2">
+<div>
+<span class="font-body-lg text-body-lg text-graphite-deep block">Длинные волосы (ниже лопаток)</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1 block">Кератиновое выпрямление / Ботокс</span>
+</div>
+<span class="font-body-lg text-body-lg text-graphite-deep whitespace-nowrap">9 000 — 10 000 ₽</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-8 text-center">
+                        *Точная стоимость зависит от густоты и пористости волос. Возможна доплата за густоту.
+                    </p>
+</div>
+</div>
+<!-- Service Category 4: Стрижки и Пилинг -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+<div class="bg-surface-container-low p-8 md:p-12">
+<h3 class="font-headline-sm text-headline-sm text-graphite-deep mb-6">Стрижки</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Создание формы, подчеркивающей вашу индивидуальность. Включает мытье головы с уходом и базовую укладку.
+                    </p>
+<div class="space-y-4">
+<div class="flex justify-between items-baseline border-b border-surface-variant/50 pb-2">
+<span class="font-body-lg text-body-lg text-graphite-deep">Подравнивание кончиков</span>
+<span class="font-body-md text-body-md text-on-surface-variant">1 500 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant/50 pb-2">
+<span class="font-body-lg text-body-lg text-graphite-deep">Женская стрижка</span>
+<span class="font-body-md text-body-md text-on-surface-variant">от 2 500 ₽</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 md:p-12">
+<h3 class="font-headline-sm text-headline-sm text-graphite-deep mb-6">Пилинг кожи головы</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Глубокое очищение кожи головы, стимуляция роста волос и профилактика проблем. Рекомендуется выполнять курсом или как дополнение к уходам.
+                    </p>
+<div class="space-y-4">
+<div class="flex justify-between items-baseline border-b border-surface-variant/50 pb-2">
+<span class="font-body-lg text-body-lg text-graphite-deep">Пилинг (отдельная процедура)</span>
+<span class="font-body-md text-body-md text-on-surface-variant">2 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-surface-variant/50 pb-2">
+<span class="font-body-lg text-body-lg text-graphite-deep">В комплексе с уходом</span>
+<span class="font-body-md text-body-md text-on-surface-variant">1 500 ₽</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Catalog Section -->
+<div class="mb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="font-label-caps text-label-caps border border-outline px-3 py-1 rounded-full mb-6 inline-block text-primary">Для домашнего ухода</span>
+<h2 class="font-headline-md text-headline-md text-graphite-deep mb-4">Каталог товаров</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        У нас вы можете приобрести профессиональную косметику для домашнего ухода, включая премиальную линейку Davines. Мастер поможет подобрать средства индивидуально для вашего типа волос, чтобы продлить эффект от салонных процедур.
+                    </p>
+<a class="font-label-caps text-label-caps text-graphite-deep border-b border-graphite-deep pb-1 hover:text-primary hover:border-primary transition-all duration-300" href="#">Узнать наличие</a>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="w-full aspect-[4/5] md:aspect-video bg-surface-variant relative overflow-hidden">
+<img alt="Стеллаж с профессиональной косметикой Davines" class="w-full h-full object-cover absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqhSj1xyhOCmDSc19ZXFMfguR5lBbDfBx_pnhXlqIAGI_zk0e98uXSoi0f1qHNzHYG_J2OURgtGtrxJmy6RSETMz8E9eUVS9QyTSTuBFBFNENTEKF84F1q8gEjky63oca3qbdADON1ZY2VhNEoooUfdGbfq6UdxPeue0YzLNYjNKY2_v19bIlmtbTlIrXNpl9sQceHwLmGKKvyzimJZoRXFqdht1MMTSb10K6nQYR6oFHeqiiwxk_Bto1YCW4IHK_offvfTILa0Pc"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-soft-beige dark:bg-on-tertiary-fixed text-graphite-deep dark:text-soft-beige transition-all duration-300">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-page max-w-7xl mx-auto">
+<div class="flex flex-col justify-between h-full space-y-8 md:space-y-0">
+<span class="font-headline-md text-headline-md">ХОРОШАЯ ДЕВОЧКА</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    © 2024 Хорошая Девочка. Editorial Luxury Salon.
+                </p>
+</div>
+<div class="flex flex-col space-y-4 font-body-md text-body-md">
+<p class="text-on-surface-variant">Сочи, ул. Первомайская, 21</p>
+<p class="text-on-surface-variant">10:00 - 22:00</p>
+</div>
+<div class="flex flex-col space-y-4 font-label-caps text-label-caps uppercase">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">WhatsApp</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Telegram</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile FAB) -->
+<nav class="fixed bottom-8 right-8 z-50 md:hidden">
+<button class="flex items-center gap-2 px-8 py-4 text-warm-white dark:text-on-surface bg-graphite-deep dark:bg-soft-beige rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">calendar_month</span>
+<span class="font-label-caps text-label-caps uppercase">Записаться онлайн</span>
+</button>
+</nav>
+</body></html>

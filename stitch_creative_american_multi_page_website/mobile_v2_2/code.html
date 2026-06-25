@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services &amp; Catalog - ХОРОШАЯ ДЕВОЧКА</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "soft-beige": "#EAE3D9",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c8c7be",
+                        "secondary-fixed": "#ffe088",
+                        "surface-tint": "#5f5e5b",
+                        "on-surface-variant": "#474741",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#e7e1e2",
+                        "surface-bright": "#fdf8f7",
+                        "outline": "#787770",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "graphite-deep": "#2D2D2D",
+                        "on-secondary-fixed-variant": "#574500",
+                        "primary": "#5f5e5b",
+                        "on-tertiary-fixed-variant": "#494647",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-container": "#fcf5f6",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fdf8f7",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary-container": "#747071",
+                        "secondary-container": "#fed65b",
+                        "surface-variant": "#e5e2e0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9d8",
+                        "surface-container-low": "#f7f3f1",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "powder-pink": "#F2D5D5",
+                        "primary-container": "#f9f6f1",
+                        "tertiary-fixed-dim": "#cbc5c6",
+                        "on-primary-container": "#72706d",
+                        "inverse-primary": "#c8c6c2",
+                        "warm-white": "#FFFFFF",
+                        "background": "#fdf8f7",
+                        "on-tertiary-fixed": "#1d1b1c",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "on-secondary-container": "#745c00",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#474743",
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary": "#735c00",
+                        "on-primary-fixed": "#1c1c19",
+                        "tertiary": "#615d5e",
+                        "primary-fixed": "#e5e2dd",
+                        "surface-container": "#f1edec",
+                        "surface-container-highest": "#e5e2e0",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "2rem",
+                        "margin-page": "4rem",
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1.5rem",
+                        "section-gap": "12rem"
+                    },
+                    "fontFamily": {
+                        "subheading-italic": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "subheading-italic": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-md": ["42px", { "lineHeight": "48px", "fontWeight": "500" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+    </style>
+</head>
+<body class="antialiased font-body-md overflow-x-hidden pt-20 pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile h-20">
+<button class="scale-95 active:transition-all hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined text-graphite-deep dark:text-warm-white" data-icon="menu">menu</span>
+</button>
+<span class="text-headline-sm font-headline-sm tracking-tighter text-graphite-deep dark:text-warm-white">ХОРОШАЯ ДЕВОЧКА</span>
+<button class="text-label-caps font-label-caps text-graphite-deep dark:text-warm-white scale-95 active:transition-all hover:opacity-70 transition-opacity duration-300">ЗАПИСАТЬСЯ</button>
+</header>
+<!-- Navigation Drawer Overlay (Hidden by default) -->
+<div class="fixed inset-0 z-[55] bg-surface-dim/50 backdrop-blur-sm hidden" id="drawer-overlay"></div>
+<nav class="fixed inset-y-0 left-0 z-[60] flex flex-col p-margin-mobile bg-soft-beige dark:bg-graphite-deep h-full w-4/5 rounded-r-none shadow-2xl transform -translate-x-full transition-transform duration-500 ease-in-out" id="drawer">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-headline-md font-headline-md text-graphite-deep dark:text-warm-white">МЕНЮ</h2>
+<button class="text-graphite-deep dark:text-warm-white hover:opacity-70" id="close-drawer">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<ul class="flex flex-col gap-6">
+<li>
+<a class="flex items-center gap-4 text-graphite-deep dark:text-secondary-fixed font-subheading-italic text-subheading-italic italic underline decoration-1 underline-offset-8 hover:pl-2 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+                    УСЛУГИ
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant font-subheading-italic text-subheading-italic hover:pl-2 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                    ГАЛЕРЕЯ
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant font-subheading-italic text-subheading-italic hover:pl-2 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+                    О НАС
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant font-subheading-italic text-subheading-italic hover:pl-2 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                    КОНТАКТЫ
+                </a>
+</li>
+</ul>
+</nav>
+<!-- Main Content -->
+<main class="flex flex-col px-margin-mobile gap-section-gap mt-12">
+<!-- Hero Section -->
+<section class="flex flex-col gap-element-gap items-center text-center">
+<h1 class="text-display-lg-mobile font-display-lg-mobile text-graphite-deep">Искусство ухода за волосами</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md mx-auto">Премиальные процедуры и восстанавливающие комплексы.</p>
+</section>
+<!-- Special Offers -->
+<section class="flex flex-col gap-4">
+<div class="bg-powder-pink p-8 rounded-lg flex flex-col gap-2">
+<span class="text-headline-sm font-headline-sm text-graphite-deep">-500 ₽</span>
+<span class="text-label-caps font-label-caps text-graphite-deep uppercase">На первый визит</span>
+</div>
+<div class="bg-soft-beige p-8 rounded-lg flex flex-col gap-2">
+<span class="text-headline-sm font-headline-sm text-graphite-deep">-1000 ₽</span>
+<span class="text-label-caps font-label-caps text-graphite-deep uppercase">На комплексный уход</span>
+</div>
+</section>
+<!-- Davines Care Section -->
+<section class="flex flex-col gap-8">
+<h2 class="text-headline-md font-headline-md text-graphite-deep">Уход Davines</h2>
+<img alt="Davines Care products" class="w-full h-64 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArnQ3gj6QgKGFXbZ3HYtj1axiov9VyfdqRweBxrdDrI0YKjWJ9KEqR-OLiDLVNZuoAkRGgMyqa0fqZjbVXiex6KoNi6DT2QUDX4tihsmwMHMQ2G80esjjsdNLbAObR0rkw4cWwVz_hxsfm4oRzfzct-4lBbTsk5mJR6XVE6mYZwHpTl0eoX4rLBWfjC981YwNbUl3a85y72ZKbRmP2n38vyA8ocVJ7V4ekl5xMUnOQ5fVyyePccDFr7PbOafnaa6dr7Ojlr4fHPZc"/>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
+<span class="text-body-md font-body-md">Уход «Абсолютное счастье»</span>
+<span class="text-label-caps font-label-caps font-bold">от 5 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
+<span class="text-body-md font-body-md">Уход «Жизненная сила»</span>
+<span class="text-label-caps font-label-caps font-bold">от 4 000 ₽</span>
+</div>
+</div>
+</section>
+<!-- Cold Restoration Section -->
+<section class="flex flex-col gap-8">
+<h2 class="text-headline-md font-headline-md text-graphite-deep">Холодное восстановление</h2>
+<img alt="Cold restoration process" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWvwxJEV2pJgTVoRbpoz8wmgKJYXUmyiAKXTbN0XrECNvzst55YlDg_nMUqhj0uCLS7L9BL85EDZWAAVTfwwWA5pBK-HQ8Y9NQBA68de1lL0d3BzW_k9Th9qHWBeI6tb6xTn2fujnhdqgB5uOpIbRo__nPXG9GORy6JhuHHBYn94_EVnrKdeXEOKmFDWm3lAyfl1z-y3qrgbHK5AhLnu7CVs-mOtyp5KkcqbazZq4_dmR9iJZMPoIJWAzeRPF26VkJA96v1w2GR1k"/>
+<p class="text-body-md font-body-md text-on-surface-variant">Глубокое восстановление структуры волоса без термического воздействия.</p>
+</section>
+<!-- Keratin and Botox -->
+<section class="flex flex-col gap-8">
+<h2 class="text-headline-md font-headline-md text-graphite-deep">Кератин и Ботокс</h2>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
+<span class="text-body-md font-body-md">Кератиновое выпрямление</span>
+<span class="text-label-caps font-label-caps font-bold">от 6 000 ₽</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-outline-variant pb-2">
+<span class="text-body-md font-body-md">Ботокс для волос</span>
+<span class="text-label-caps font-label-caps font-bold">от 5 500 ₽</span>
+</div>
+</div>
+</section>
+<!-- Haircuts and Scalp -->
+<section class="flex flex-col gap-4">
+<div class="bg-surface-container p-8 rounded-lg flex flex-col gap-2 border border-outline-variant">
+<h3 class="text-subheading-italic font-subheading-italic text-graphite-deep">Стрижки</h3>
+<span class="text-body-md font-body-md text-on-surface-variant">Женские, мужские, детские.</span>
+<span class="text-label-caps font-label-caps font-bold mt-2">от 2 000 ₽</span>
+</div>
+<div class="bg-surface-container p-8 rounded-lg flex flex-col gap-2 border border-outline-variant">
+<h3 class="text-subheading-italic font-subheading-italic text-graphite-deep">Пилинг кожи головы</h3>
+<span class="text-body-md font-body-md text-on-surface-variant">Очищение и стимуляция роста.</span>
+<span class="text-label-caps font-label-caps font-bold mt-2">от 3 000 ₽</span>
+</div>
+</section>
+<!-- Product Catalog -->
+<section class="flex flex-col gap-8">
+<h2 class="text-headline-md font-headline-md text-graphite-deep">Каталог товаров</h2>
+<img alt="Product catalog display" class="w-full h-auto object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWvwxJEV2pJgTVoRbpoz8wmgKJYXUmyiAKXTbN0XrECNvzst55YlDg_nMUqhj0uCLS7L9BL85EDZWAAVTfwwWA5pBK-HQ8Y9NQBA68de1lL0d3BzW_k9Th9qHWBeI6tb6xTn2fujnhdqgB5uOpIbRo__nPXG9GORy6JhuHHBYn94_EVnrKdeXEOKmFDWm3lAyfl1z-y3qrgbHK5AhLnu7CVs-mOtyp5KkcqbazZq4_dmR9iJZMPoIJWAzeRPF26VkJA96v1w2GR1k"/>
+<button class="bg-graphite-deep text-warm-white py-4 px-8 text-label-caps font-label-caps tracking-widest hover:bg-surface-tint transition-colors duration-300 w-full text-center">ПЕРЕЙТИ В КАТАЛОГ</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile py-12 flex flex-col items-center gap-8 text-center bg-surface dark:bg-graphite-deep border-t border-outline-variant/30 mt-section-gap">
+<div class="flex flex-col gap-4">
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500" href="#">INSTAGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500" href="#">TELEGRAM</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant dark:text-outline-variant hover:tracking-widest transition-all duration-500" href="#">WHATSAPP</a>
+</div>
+<span class="text-label-caps font-label-caps text-graphite-deep dark:text-soft-beige mt-4">© 2024 ХОРОШАЯ ДЕВОЧКА. EDITORIAL BEAUTY.</span>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-1/2 -translate-x-1/2 w-[280px] z-50 flex justify-around items-center py-3 px-6 bg-graphite-deep dark:bg-surface-container-lowest shadow-xl rounded-full md:hidden">
+<a class="hover:scale-110 transition-transform scale-90 active:duration-150 text-warm-white/60 p-3" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</a>
+<a class="hover:scale-110 transition-transform scale-90 active:duration-150 bg-soft-beige/20 text-warm-white rounded-full p-3" href="#">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</a>
+<a class="hover:scale-110 transition-transform scale-90 active:duration-150 text-warm-white/60 p-3" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</a>
+</nav>
+<script>
+        // Simple drawer toggle logic
+        const menuBtn = document.querySelector('header button');
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        const closeBtn = document.getElementById('close-drawer');
+
+        function toggleDrawer() {
+            const isClosed = drawer.classList.contains('-translate-x-full');
+            if (isClosed) {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            } else {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleDrawer);
+        closeBtn.addEventListener('click', toggleDrawer);
+        overlay.addEventListener('click', toggleDrawer);
+    </script>
+</body></html>
